@@ -15,7 +15,7 @@ const faqs = [
     a: "On iOS, PraisePause uses Screen Time APIs to detect usage and trigger a gentle system notification that opens your pause. On Android, it uses Accessibility Services to surface the pause. It works alongside apps like TikTok, Instagram, YouTube Shorts, and Facebook — you don't have to be on a specific app. After your pause, you return right where you left off.",
   },
   {
-    q: 'I've tried screen time apps before and always ended up ignoring them. Why is this different?',
+    q: "I've tried screen time apps before and always ended up ignoring them. Why is this different?",
     a: "Most screen time apps use friction — hard locks, timers, shame-inducing warnings. PraisePause uses invitation, not restriction. It doesn't block anything. It simply offers a 30-second moment of grace. The emotional reward of a worship pause is far stronger than a cold hard-stop. Our users report they actually look forward to the interruption after the first week.",
   },
   {
