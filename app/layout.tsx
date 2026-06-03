@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import './globals.css';
 
+export const runtime = 'edge';
+
 /* ── Fonts ─────────────────────────────────────────────────────── */
 const inter = Inter({
   subsets:  ['latin'],
