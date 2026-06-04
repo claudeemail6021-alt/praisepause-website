@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import Script from 'next/script';
 import './globals.css';
 
 export const runtime = 'edge';
@@ -110,7 +111,7 @@ export const metadata: Metadata = {
 
   /* Verification (add values from Google Search Console / Bing) */
   verification: {
-    google: 'REPLACE_WITH_GOOGLE_SITE_VERIFICATION_TOKEN',
+    google: 'f4fa593ccc43fafd',
   },
 
   /* Icons */
@@ -227,6 +228,20 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-DMZK8QKBL0"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-DMZK8QKBL0');
+          `}
+        </Script>
       </body>
     </html>
   );
